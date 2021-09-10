@@ -1,19 +1,18 @@
-var x, y, v;
-
+var x, y;
 function setup() {
-  createCanvas(500,400);
-  x = 0
-  y = 200
-  v = 5
+  createCanvas(400, 400);
+  x = 40
+  y = 40
 }
 
 function draw() {
   background(225);
 
-  ellipse(x, y, 50, 50);
-  x = x + v;
-  
-  if (x <= 0 || x > 500){
-    v = v * -1;
+  ellipse(x, y, 40, 40);
+  x = x + 1;
+  y = y + 1;
+
+  if(x >= 400){
+    x = 40;
   }
 }
